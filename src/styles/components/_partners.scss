@@ -1,0 +1,85 @@
+.partners {
+  &__container {
+    position: relative;
+    padding-bottom: 49px;
+    @media (max-width: 550px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    @media (max-width: 900px) {
+      padding-bottom: 96px;
+    }
+  }
+  &__title {
+    margin-bottom: 76px;
+    @media (max-width: 500px) {
+      margin-bottom: 40px;
+    }
+    @media (max-width: 480px) {
+      margin-bottom: 33px;
+    }
+  }
+  &__swiper {
+    padding-left: 54px;
+    padding-right: 49px;
+    @media (max-width: 1330px) {
+      padding: 0;
+    }
+    @media (max-width: 968px) {
+      padding-bottom: 48px;
+    }
+    @media (max-width: 480px) {
+      padding-bottom: 39px;
+    }
+    & .swiper-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      justify-content: space-between;
+      & .swiper-slide {
+        text-align: center;
+        width: 188px;
+      }
+    }
+  }
+}
+.swiper__link img {
+  max-width: none;
+}
+.swiper__link img {
+  filter: grayscale(100%);
+  transition: all 0.3s ease 0s;
+}
+.swiper__link img:hover {
+  filter: grayscale(0%);
+}
+.colloborate {
+  cursor: pointer;
+  right: 85px;
+  top: 3px;
+  position: absolute;
+  color: var(--color-cobalt);
+  font-family: "Intro Book";
+  line-height: 24px;
+  padding: 8px 16px 8px 18px;
+  border-radius: 24px;
+  border: 1px solid #dde7fd;
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease 0s;
+  &:hover {
+    opacity: 0.7;
+  }
+  @media (max-width: 968px) {
+    bottom: 26px;
+    top: initial;
+    right: initial;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @media (max-width: 500px) {
+    width: 91%;
+  }
+}

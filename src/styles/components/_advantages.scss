@@ -1,0 +1,132 @@
+.advantages {
+  background-image: url("/public/img/advantages/pad.png");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: center center;
+  @media (max-width: 1250px) {
+    background: #f2f6ff;
+  }
+  &__container {
+    z-index: 1;
+    position: relative;
+    padding-top: 65px;
+    padding-bottom: 63px;
+    @media (max-width: 480px) {
+      padding-top: 49px;
+      padding-bottom: 50px;
+    }
+  }
+  &__cards {
+    padding-left: 150px;
+    padding-right: 90px;
+    display: flex;
+    gap: 50px;
+    margin-bottom: 41px;
+    @media (max-width: 1250px) {
+      padding-left: 25px;
+      padding-right: 25px;
+      text-align: center;
+      justify-content: center;
+    }
+    @media (max-width: 1020px) {
+      flex-direction: column;
+      row-gap: 36px;
+      align-items: center;
+    }
+    @media (max-width: 480px) {
+      row-gap: 41px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  &__card {
+    max-width: 300px;
+    @media (max-width: 1250px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    @media (max-width: 480px) {
+      max-width: none;
+    }
+  }
+  &__decor {
+    position: absolute;
+    top: -73px;
+    right: -54px;
+    @media (max-width: 1250px) {
+      display: none;
+    }
+  }
+  &__btn {
+    cursor: pointer;
+    margin: 0 auto;
+    color: var(--color-cobalt);
+    border-radius: 30px;
+    font-family: "Intro";
+    font-size: 18px;
+    line-height: 32px;
+    background-color: var(--color-dandelion);
+    padding: 7px 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease 0s;
+    @media (max-width: 480px) {
+      padding: 7px 96px;
+    }
+    &:hover {
+      color: white;
+    }
+  }
+}
+.card {
+  &__img {
+    margin-bottom: 26px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0px 8px 16px rgba(43, 107, 243, 0.16));
+    background-color: var(--color-white);
+    @media (max-width: 480px) {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 27px;
+    }
+  }
+  &__title {
+    color: var(--color-cobalt);
+    font-family: "Intro";
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 21px;
+    @media (max-width: 480px) {
+      font-size: 20px;
+      line-height: 24px; /* 120% */
+      margin-bottom: 20px;
+    }
+    & a {
+      text-decoration: underline;
+      color: var(--color-light-denim);
+      transition: all 0.3s ease 0s;
+    }
+    & a:hover {
+      text-decoration: none;
+      opacity: 0.7;
+    }
+  }
+  &__text {
+    color: var(--color-grey);
+    font-family: "Intro Book";
+    line-height: 24px;
+  }
+}
+@media (max-width: 480px) {
+  .advantages__text {
+    margin-bottom: 39px;
+  }
+}

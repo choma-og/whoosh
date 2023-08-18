@@ -1,0 +1,81 @@
+.payment {
+  &__container {
+    padding-top: 100px;
+    padding-bottom: 94px;
+    @media (max-width: 900px) {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+    @media (max-width: 500px) {
+      padding-top: 54px;
+      padding-bottom: 54px;
+    }
+    @media (max-width: 480px) {
+      padding-top: 47px;
+      padding-right: 0;
+      padding-bottom: 62px;
+    }
+  }
+  &__title {
+    margin-bottom: 54px;
+    @media (max-width: 480px) {
+      margin-bottom: 42px;
+    }
+  }
+  &__content {
+    max-width: 1024px;
+    margin: 0 auto;
+    overflow: hidden;
+    @media (min-width: 745px) {
+      max-width: 710px;
+    }
+    @media (min-width: 1020px) {
+      max-width: 930px;
+    }
+    @media (min-width: 1200px) {
+      max-width: 1024px;
+    }
+    @media (max-width: 1300px) {
+      max-width: 800px;
+    }
+    & .swiper-slide {
+      cursor: pointer;
+    }
+  }
+  &__swiper {
+    & .swiper-slide {
+      width: 84px !important;
+      overflow: hidden;
+    }
+  }
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: "";
+}
+.swiper-button-prev,
+.swiper-button-next {
+  top: 39px;
+  width: initial;
+  height: initial;
+  color: var(--second-color);
+  display: none;
+}
+.swiper-button-prev {
+  left: 70px;
+}
+.swiper-button-next {
+  right: 69px;
+}
+@media (min-width: 1020px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: block;
+  }
+  .swiper-button-next {
+    // right: 58px;
+  }
+  .swiper-button-prev {
+    // left: 58px;
+  }
+}

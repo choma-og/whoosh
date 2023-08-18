@@ -1,0 +1,230 @@
+@import "./vars";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Intro Book";
+  line-height: 1;
+  color: var(--color-grey);
+}
+
+body._lock {
+  overflow: hidden;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.main {
+  flex: 1 1 auto;
+}
+[class*="__container"] {
+  max-width: 1330px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.section {
+  padding-top: 91px;
+  @media (max-width: 900px) {
+    padding-top: 70px;
+  }
+  @media (max-width: 500px) {
+    padding-top: 54px;
+  }
+  @media (max-width: 480px) {
+    padding-top: 48px;
+  }
+}
+.section__title {
+  color: var(--color-cobalt);
+  text-align: center;
+  font-family: "Intro";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  margin-bottom: 29px;
+  @media (max-width: 900px) {
+    line-height: 30px;
+    font-size: 32px;
+  }
+  @media (max-width: 500px) {
+    font-size: 24px;
+  }
+  @media (max-width: 480px) {
+    margin: 0 auto;
+    margin-bottom: 12px;
+  }
+}
+.section__text {
+  text-align: center;
+  color: var(--color-cobalt);
+  margin: 0 auto;
+  font-family: "Intro Book";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 41px;
+  opacity: 0.48;
+  max-width: 754px;
+  @media (max-width: 900px) {
+    line-height: 32px;
+    font-size: 20px;
+  }
+  @media (max-width: 500px) {
+    font-size: 20px;
+  }
+  @media (max-width: 480px) {
+    margin-bottom: 22px;
+  }
+}
+.hidden {
+  display: none;
+}
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.btn {
+  border-radius: 32px;
+  background-color: var(--color-light-denim);
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--color-white);
+  text-align: center;
+  padding: 8px;
+  transition: all 0.3s ease 0s;
+}
+.btn:hover {
+  background-color: rgba(18, 82, 219, 1);
+}
+.card-more {
+  transform: translateY(-2px) translateX(5px);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  border-radius: 16px;
+  opacity: 0.24;
+  background: var(--color-light-denim);
+  transition: all 0.3s ease 0s;
+}
+.card-more:hover {
+  opacity: 0.7;
+}
+.privacy-hidden {
+  display: none;
+}
+svg path {
+  transition: all 0.3s ease 0s;
+}
+.section-line {
+  position: relative;
+  height: 2px;
+  width: 100%;
+  background: var(
+    --color-pale-aqua,
+    linear-gradient(0deg, #b7c6e7 0%, #b7c6e7 100%),
+    #c2d2f4
+  );
+  opacity: 0.5;
+}
+.circle-add .section-line__circle {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-white);
+}
+.made-by .section-line__circle {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-ghost-white);
+}
+.made-by {
+  color: #c2d2f4;
+  text-align: center;
+  font-family: "Intro";
+  font-size: 14px;
+  line-height: 24px;
+}
